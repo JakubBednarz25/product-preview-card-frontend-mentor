@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction:row;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.img-container {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:325px;
+  height:450px;
+}
+section {
+  background-color: white;
+  padding: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width:325px;
+  height:450px;
+}
+section label {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color:hsl(228, 12%, 48%)
+}
+section h1 {
+  font-size: 35px;
+  /* width: 2020px; */
+  line-height: 95%;
+  margin-bottom: 30px;
+  font-family: "Fraunces", serif;
+  /* padding-left:5px; */
+}
+section p {
+  /* padding-right:20px; */
+  margin-bottom: 25px;
+  line-height: 150%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color:hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+.prices {
+  display: flex;
+  align-items: center;
+}
+.prices h2 {
+  font-size: 35px;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+.prices span {
+  text-decoration: line-through;
+  font-size: 16px;
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  color:hsl(228, 12%, 48%)
+}
+button {
+  margin-top: 25px;
+  align-self: stretch;
+  padding: 15px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+    cursor:pointer;
+}
+button:hover{
+    transition-duration:0.25s;
+    background-color: hsl(158, 36%, 19%);
+}
+button svg{
+    margin-right:15px;
+}
+
+@media only screen and (max-width:376px){
+    .card{
+        flex-direction:column;
+    }
+    .img-container{
+        background-image: url('./images/image-product-mobile.jpg');
+        height:250px;
+    }
+    section{
+        height:450px;
+    }
+}
